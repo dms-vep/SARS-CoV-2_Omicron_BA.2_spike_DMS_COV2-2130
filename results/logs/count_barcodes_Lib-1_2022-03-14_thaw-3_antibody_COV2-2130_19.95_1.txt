@@ -1,0 +1,14 @@
+There are 91000 valid barcodes for library='Lib-1', sample='2022-03-14_thaw-3_antibody_COV2-2130_19.95_1'
+Parsing barcodes from /fh/fast/bloom_j/SR/ngs/illumina/bdadonai/230213_VH01189_64_AAAYVG7HV/Unaligned/Project_bdadonai/BA2_18_S18_R1_001.fastq.gz
+Counts of valid and invalid barcodes:
+       n_barcodes  n_counts
+valid                      
+False      137727   3563471
+True        34369  17053036
+Writing valid barcode counts to results/barcode_runs/counts_by_sample/Lib-1_2022-03-14_thaw-3_antibody_COV2-2130_19.95_1.csv
+/fh/fast/bloom_j/computational_notebooks/bdadonai/2023/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/.snakemake/scripts/tmp5ov3xd4t.count_barcodes.py:71: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  counts_valid = counts_valid.append(
+Writing invalid barcode counts to results/barcode_runs/counts_invalid_by_sample/Lib-1_2022-03-14_thaw-3_antibody_COV2-2130_19.95_1.csv
+Writing barcode fates to results/barcode_runs/fates_by_sample/Lib-1_2022-03-14_thaw-3_antibody_COV2-2130_19.95_1.csv
+/fh/fast/bloom_j/computational_notebooks/bdadonai/2023/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/.snakemake/scripts/tmp5ov3xd4t.count_barcodes.py:87: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  .append(

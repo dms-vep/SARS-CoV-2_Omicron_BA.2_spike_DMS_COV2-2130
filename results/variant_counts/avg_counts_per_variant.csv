@@ -1,0 +1,15 @@
+library,sample,avg_counts,min_avg_counts,adequate_counts,exclude_after_counts
+Lib-1,2022-03-14_thaw-3_antibody_2130-1-0114-112_1.76_1,190.3,20,True,no
+Lib-1,2022-03-14_thaw-3_antibody_2130-1-0114-112_43.94_1,145.0,20,True,no
+Lib-1,2022-03-14_thaw-3_antibody_2130-1-0114-112_8.79_1,180.1,20,True,no
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_0.8_1,156.1,20,True,no
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_19.95_1,187.4,20,True,no
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_3.99_1,179.6,20,True,no
+Lib-1,2022-03-14_thaw-3_no-antibody_control_1,165.2,20,True,no
+Lib-2,2022-03-14_thaw-3_antibody_2130-1-0114-112_1.76_1,204.2,20,True,no
+Lib-2,2022-03-14_thaw-3_antibody_2130-1-0114-112_43.94_1,192.5,20,True,no
+Lib-2,2022-03-14_thaw-3_antibody_2130-1-0114-112_8.79_1,195.3,20,True,no
+Lib-2,2022-03-14_thaw-3_antibody_COV2-2130_0.8_1,212.2,20,True,no
+Lib-2,2022-03-14_thaw-3_antibody_COV2-2130_19.95_1,202.6,20,True,no
+Lib-2,2022-03-14_thaw-3_antibody_COV2-2130_3.99_1,196.4,20,True,no
+Lib-2,2022-03-14_thaw-3_no-antibody_control_1,204.7,20,True,no

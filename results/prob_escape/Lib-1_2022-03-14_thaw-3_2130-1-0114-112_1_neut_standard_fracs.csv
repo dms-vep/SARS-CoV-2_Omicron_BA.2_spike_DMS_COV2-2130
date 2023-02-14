@@ -1,0 +1,4 @@
+library,antibody_sample,no-antibody_sample,antibody,antibody_concentration,antibody_count,antibody_frac,no-antibody_count,no-antibody_frac
+Lib-1,2022-03-14_thaw-3_antibody_2130-1-0114-112_1.76_1,2022-03-14_thaw-3_no-antibody_control_1,2130-1-0114-112,1.76,283962,0.0164,231982,0.01543
+Lib-1,2022-03-14_thaw-3_antibody_2130-1-0114-112_8.79_1,2022-03-14_thaw-3_no-antibody_control_1,2130-1-0114-112,8.79,4535977,0.2767,231982,0.01543
+Lib-1,2022-03-14_thaw-3_antibody_2130-1-0114-112_43.94_1,2022-03-14_thaw-3_no-antibody_control_1,2130-1-0114-112,43.94,6285313,0.4762,231982,0.01543

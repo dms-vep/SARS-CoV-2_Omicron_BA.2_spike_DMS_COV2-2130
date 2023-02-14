@@ -1,0 +1,16 @@
+library,antibody_sample,no-antibody_sample,n_aa_substitutions,antibody_neut_standard_count,no-antibody_neut_standard_count,antibody_count,no-antibody_count,prob_escape_uncensored,prob_escape
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_0.8_1,2022-03-14_thaw-3_no-antibody_control_1,0,2183898,231982,2007124,3253675,0.06553,0.06553
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_0.8_1,2022-03-14_thaw-3_no-antibody_control_1,1,2183898,231982,3410793,4711908,0.07689,0.07689
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_0.8_1,2022-03-14_thaw-3_no-antibody_control_1,2,2183898,231982,2997411,3593369,0.08861,0.08861
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_0.8_1,2022-03-14_thaw-3_no-antibody_control_1,3,2183898,231982,1974206,1970147,0.1064,0.1064
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_0.8_1,2022-03-14_thaw-3_no-antibody_control_1,4,2183898,231982,1634004,1274858,0.1361,0.1361
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_19.95_1,2022-03-14_thaw-3_no-antibody_control_1,0,7392512,231982,643299,3253675,0.006204,0.006204
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_19.95_1,2022-03-14_thaw-3_no-antibody_control_1,1,7392512,231982,2040686,4711908,0.01359,0.01359
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_19.95_1,2022-03-14_thaw-3_no-antibody_control_1,2,7392512,231982,2511724,3593369,0.02193,0.02193
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_19.95_1,2022-03-14_thaw-3_no-antibody_control_1,3,7392512,231982,2048773,1970147,0.03263,0.03263
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_19.95_1,2022-03-14_thaw-3_no-antibody_control_1,4,7392512,231982,2416042,1274858,0.05947,0.05947
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_3.99_1,2022-03-14_thaw-3_no-antibody_control_1,0,5998353,231982,620383,3253675,0.007374,0.007374
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_3.99_1,2022-03-14_thaw-3_no-antibody_control_1,1,5998353,231982,2151995,4711908,0.01766,0.01766
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_3.99_1,2022-03-14_thaw-3_no-antibody_control_1,2,5998353,231982,2686922,3593369,0.02892,0.02892
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_3.99_1,2022-03-14_thaw-3_no-antibody_control_1,3,5998353,231982,2334184,1970147,0.04582,0.04582
+Lib-1,2022-03-14_thaw-3_antibody_COV2-2130_3.99_1,2022-03-14_thaw-3_no-antibody_control_1,4,5998353,231982,2549645,1274858,0.07735,0.07735
