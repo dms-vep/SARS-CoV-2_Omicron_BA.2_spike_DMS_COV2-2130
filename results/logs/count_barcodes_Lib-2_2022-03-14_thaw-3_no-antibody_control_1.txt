@@ -6,9 +6,9 @@ valid
 False      181925   2007746
 True        74236  17447264
 Writing valid barcode counts to results/barcode_runs/counts_by_sample/Lib-2_2022-03-14_thaw-3_no-antibody_control_1.csv
-/fh/fast/bloom_j/computational_notebooks/bdadonai/2023/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/.snakemake/scripts/tmpepz5zazi.count_barcodes.py:71: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+/fh/fast/bloom_j/computational_notebooks/bdadonai/2023/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/.snakemake/scripts/tmp8v8kuu_3.count_barcodes.py:71: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
   counts_valid = counts_valid.append(
 Writing invalid barcode counts to results/barcode_runs/counts_invalid_by_sample/Lib-2_2022-03-14_thaw-3_no-antibody_control_1.csv
 Writing barcode fates to results/barcode_runs/fates_by_sample/Lib-2_2022-03-14_thaw-3_no-antibody_control_1.csv
-/fh/fast/bloom_j/computational_notebooks/bdadonai/2023/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/.snakemake/scripts/tmpepz5zazi.count_barcodes.py:87: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+/fh/fast/bloom_j/computational_notebooks/bdadonai/2023/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/.snakemake/scripts/tmp8v8kuu_3.count_barcodes.py:87: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
   .append(

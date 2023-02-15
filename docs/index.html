@@ -15,7 +15,7 @@
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Counts of variants" href="analyze_variant_counts.html" />
+    <link rel="next" title="Analyze PacBio CCSs" href="analyze_pacbio_ccs.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -48,6 +48,12 @@ Click <a class="reference download internal" download="" href="_downloads/6cbfe8
 details, using dropdowns, etc.</p>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="analyze_pacbio_ccs.html">Analyze PacBio CCSs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build_pacbio_consensus.html">Build PacBio consensus sequences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build_codon_variants.html">Build the codon variants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="analyze_func_scores.html">Functional scores of variants for viral entry</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fit_globalepistasis.html">Fit global epistasis models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="avg_muteffects.html">Functional effects of mutations across replicates</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analyze_variant_counts.html">Counts of variants</a></li>
 <li class="toctree-l1"><a class="reference internal" href="analyze_prob_escape.html">Probabilities of escape and neutralization in antibody selections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="fit_polyclonal.html">Fit <code class="docutils literal notranslate"><span class="pre">polyclonal</span></code> models</a></li>
@@ -65,9 +71,20 @@ details, using dropdowns, etc.</p>
 <li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/variants/codon_variants.csv">codon-variant table</a></p></li>
 <li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/barcode_runs/processed_barcode_runs.csv">processed barcode sequencing runs</a></p></li>
 <li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/variant_counts">variant counts</a></p></li>
+<li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/func_scores/functional_selections.csv">functional selection experiments</a></p></li>
+<li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/globalepistasis_fits">mutation effects for each functional selection</a></p></li>
+<li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/muteffects_functional/muteffects_observed.csv">mutation functional effects replicate average (observed phenotype)</a></p></li>
+<li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/muteffects_functional/muteffects_latent.csv">mutation functional effects replicate average (latent phenotype)</a></p></li>
 <li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/prob_escape/antibody_selections.csv">antibody selection experiments</a></p></li>
 <li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/antibody_escape">antibody escape values</a></p></li>
 <li><p><a class="reference external" href="https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/site_numbering/site_numbering_map.csv">sequential to reference site numbering</a></p></li>
+</ul>
+</section>
+<section id="interactive-plots-of-mutation-functional-effects">
+<h2>Interactive plots of mutation functional effects<a class="headerlink" href="#interactive-plots-of-mutation-functional-effects" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="muteffects_observed_heatmap.html">Observed phenotype effects</a></p></li>
+<li><p><a class="reference external" href="muteffects_latent_heatmap.html">Latent phenotype effects</a></p></li>
 </ul>
 </section>
 <section id="interactive-plots-of-mutation-antibody-escape">

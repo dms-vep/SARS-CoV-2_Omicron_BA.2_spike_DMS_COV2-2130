@@ -23,32 +23,15 @@ authors: Bernadeta Dadonaite and Jesse Bloom
 # Parameters related to building the codon variants
 # ----------------------------------------------------------------------------
 
-# There are two ways you can get the codon variants: download a pre-built codon
-# variant table, or build them from PacBio CCSs yourself. If you are using
-# pre-built ones, then specify the links to URLs giving the codon variants,
-# gene sequence, and protein sequence for the pre-built table under `prebuilt_variants`.
-# Otherwise, specify the other variables. If `prebuilt_variants` is specified, all
-# other variables in this section are ignored (and do not need to be specified at all).
+# Parameters for building PacBio CCS consensuses
+max_ccs_error_rate: 1.0e-4  # only keep CCS if gene/barcode error rate <= this
+consensus_params:  # parameters for building PacBio consensus sequences
+  max_sub_diffs: null
+  max_indel_diffs: null
+  max_minor_sub_frac: 0.2
+  max_minor_indel_frac: 0.2
+  min_support: 3
 
-# If using pre-built variants specify URL for pre-built codon-variant table
-# and gene (codon) sequence. Here we use the tables from:
-# https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_mAbs
-prebuilt_variants: https://raw.githubusercontent.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS/main/results/variants/codon_variants.csv?token=GHSAT0AAAAAABU5EYMQ7K4YNOXUJZU73OQAY7L6DKA
-prebuilt_geneseq: https://raw.githubusercontent.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS/main/results/gene_sequence/codon.fasta?token=GHSAT0AAAAAABU5EYMQ5RX3WBSYBQVNMD56Y7L6EEA
-
-# ----------------------------------------------------------------------------
-# Parameters related to computing functional scores
-# ----------------------------------------------------------------------------
-
-# If you want to use prebuilt functional scores just taken from another repo, then
-# set the `prebuilt_muteffects` variable below to the URL for pre-built effects of
-# mutations on the observed phenotype. In that case, all other variables specified in this
-# section will be ignored and can be deleted.
-prebuilt_muteffects: https://raw.githubusercontent.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS/main/results/muteffects_functional/muteffects_observed.csv?token=GHSAT0AAAAAABU5EYMRJWHA7MQCIN5SWBR6Y7L6E3Q
-
-# ----------------------------------------------------------------------------
-# Parameters for analyses downstream of building the codon variants
-# ----------------------------------------------------------------------------
 # Parameters for processing Illumina barcodes
 illumina_barcode_parser_params:
   upstream: AACTCCACTAGGAACATTTCTCTCTCGAATCTAGA
@@ -65,7 +48,7 @@ min_avg_counts: 20  # consider value more like ~20 for real pipelines
 # Require neut standard to have at least this many counts
 # and this much fraction of total counts or raise error:
 prob_escape_min_neut_standard_count: 1000
-prob_escape_min_neut_standard_frac: 0.0005
+prob_escape_min_neut_standard_frac: 0.0001
 # Only compute escape probabilities for variants with at least this many
 # counts and this fraction of total counts in no-antibody sample:
 prob_escape_min_no_antibody_counts: 20
@@ -73,9 +56,47 @@ prob_escape_min_no_antibody_frac: 0.000001  # make smaller for large libraries, 
 # when averaging antibody escape values, take the "median" or "mean"?
 escape_avg_method: median
 
+# Parameters for functional scores and global epistasis analysis
+func_scores_pseudocount: 0.5  # pseudocount when computing functional scores
+func_scores_min_wt_count: 1000  # require this many wildtype counts or error
+func_scores_min_wt_frac:  0.001  # require this fraction of all counts for wildtype or error
+# Only fit global epistasis models for variants with at least this many
+# pre-selection counts and this fraction of total pre-selection counts
+func_scores_min_preselection_counts: 20
+func_scores_min_preselection_frac: 0.000001  # make smaller for large libraries, say 0.1 / (library size)
+# when averaging mutation effects on viral entry, take the "median" or "mean"?
+muteffects_avg_method: median
+# keyword arguments to `polyclonal.plot.lineplot_and_heatmap` for plotting functional effects
+muteffects_plot_kwargs:
+  addtl_slider_stats:
+    times_seen: 3
+  heatmap_max_at_least: 1
+  heatmap_min_at_least: -1
+  init_floor_at_zero: False
+  slider_binding_range_kwargs:
+    n_libraries:
+      step: 1
+    times_seen:
+      step: 1
+      min: 1
+      max: 25
+
 # ----------------------------------------------------------------------------
-# Input data to dms-vep-pipeline downstream of building codon variants
+# Input data to dms-vep-pipeline
 # ----------------------------------------------------------------------------
+# PacBio sequencing
+pacbio_runs: data/PacBio_runs.csv  # PacBio sequencing data
+pacbio_amplicon: data/PacBio_amplicon.gb  # Genbank file with PacBio amplicon
+pacbio_amplicon_specs: data/PacBio_feature_parse_specs.yaml  # alignparse feature parsing
+variant_tags:  # variant tags in PacBio amplicon, or "null" if no tags
+  variant_tag5:
+    variant_1: G
+    variant_2: C
+    wildtype: A
+  variant_tag3:
+    variant_1: G
+    variant_2: C
+    wildtype: A
 
 # Map sequential 1, 2, numbering of gene in PacBio amplicon to the desired
 # final reference numbering scheme. Unlike in the `dms-vep-pipeline`

@@ -9,4 +9,4 @@ Output Notebook: results/notebooks/compare_IC50s.ipynb
 0.00s - to python to disable frozen modules.
 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
 Executing notebook with kernel: python3
-Executing:   9%|▉         | 1/11 [00:04<00:48,  4.87s/cell]Executing:  18%|█▊        | 2/11 [00:06<00:24,  2.72s/cell]Executing:  64%|██████▎   | 7/11 [00:40<00:24,  6.05s/cell]Executing:  91%|█████████ | 10/11 [00:40<00:03,  3.64s/cell]Executing: 100%|██████████| 11/11 [00:40<00:00,  3.07s/cell]Executing: 100%|██████████| 11/11 [00:41<00:00,  3.77s/cell]
+Executing:   9%|▉         | 1/11 [00:02<00:22,  2.25s/cell]Executing:  18%|█▊        | 2/11 [00:03<00:12,  1.38s/cell]Executing:  64%|██████▎   | 7/11 [00:30<00:18,  4.71s/cell]Executing:  91%|█████████ | 10/11 [00:30<00:02,  2.83s/cell]Executing: 100%|██████████| 11/11 [00:30<00:00,  2.39s/cell]Executing: 100%|██████████| 11/11 [00:31<00:00,  2.86s/cell]
