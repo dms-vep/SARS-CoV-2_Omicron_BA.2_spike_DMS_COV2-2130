@@ -62,6 +62,35 @@ rule compare_IC50s:
     shell:
         "papermill {input.nb} {output.nb} &> {log}"
 
+antibodies_to_compare = ["COV2-2130", "2130-1-0114-112"]
+rule compare_escape_maps:
+    """Compare escape maps for COV2-2130 and 2130-1-0114-112."""
+    input:
+        antibodies=expand(
+            os.path.join(config["escape_dir"], "{antibody}.pickle"),
+            antibody=antibodies_to_compare,
+        ),
+        muteffects=config["muteffects_observed"],
+        polyclonal_config=config["polyclonal_config"],
+        nb="notebooks/compare_escape_maps.ipynb",
+    params:
+        antibodies_yaml="{'antibodies': " + str(antibodies_to_compare) + "}",
+    output:
+        chart="results/antibody_comparison/antibody_comparison.html",
+        nb="results/notebooks/compare_escape_maps.ipynb",
+    log:
+        os.path.join(config["logdir"], "compare_escape_maps.txt"),
+    conda:
+        "dms-vep-pipeline/environment.yml"
+    shell:
+        """
+        papermill \
+            -p chart_html {output.chart} \
+            -y "{params.antibodies_yaml}" \
+            {input.nb} \
+            {output.nb} \
+            &> {log}
+        """
 
 
 # Add any extra data/results files for docs with name: file
