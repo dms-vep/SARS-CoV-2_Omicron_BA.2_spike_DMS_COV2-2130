@@ -1,6 +1,0 @@
-fate,count,library,sample
-low quality barcode,3867421,Lib-1,2022-03-14_thaw-3_no-antibody_control_1
-unparseable barcode,413514,Lib-1,2022-03-14_thaw-3_no-antibody_control_1
-failed chastity filter,0,Lib-1,2022-03-14_thaw-3_no-antibody_control_1
-valid barcode,15035939,Lib-1,2022-03-14_thaw-3_no-antibody_control_1
-invalid barcode,2320202,Lib-1,2022-03-14_thaw-3_no-antibody_control_1
