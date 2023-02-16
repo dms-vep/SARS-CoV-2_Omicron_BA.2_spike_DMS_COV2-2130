@@ -1,6 +1,6 @@
 
 #SARS-CoV-2 variant used in this analysis
-variant: Omicron_BA.1
+variant: Omicron_BA.2
 
 # location of mutation count data on CoVsurver:
 mutation_count_url: https://mendel.bii.a-star.edu.sg/METHODS/corona/current/MUTATIONS/hCoV-19_Human_2019_WuhanWIV04/hcov19_Spike_mutations_table.html
@@ -11,9 +11,9 @@ site_selection_p_cutoff: 0.01  # consider sites with positive selection at P < t
 site_selection_min_time_windows: 3  # must be selected in at least this many time windows
 
 # mutation filters
-gisaid_mutation_count_filter: 16
-usher_count_filter: 21
-deletion_count_filter: 300
+gisaid_mutation_count_filter: 23
+usher_count_filter: 24
+deletion_count_filter: 350
 
 #lookup table for variant sequence renumbering
 reference_lookup: reference_sequences/reference_sequence_position_lookup.csv

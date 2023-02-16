@@ -17,5 +17,5 @@ This subdirectory contains contains SARS-CoV-2 spike reference sequences and loo
 	- `variant_pos` Delta variant spike amino acid position
 	- `variant_sig` Signiture amino acid changes in Delta variant. `Yes` for amino acid changes that are unique to Delta variant and `No` for amino acids that are the the same in relation to Wuhan-1 sequence. 
 
-[other_plasmid_maps_for_library_design](./other_plasmid_maps_for_library_design) subfolder contains additional plasmids used for cloning the DMS library.
+
 
