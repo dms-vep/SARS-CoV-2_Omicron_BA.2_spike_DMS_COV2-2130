@@ -87,6 +87,5 @@ assert observed.notnull().all().all()
 # concatenate everything and write to file
 (pd.concat([paired_positive, positive, recurrent, observed])
  .sort_values(['mutation_type', 'site', 'amino_acid'])
- .rename(columns={"site": "sequential_site"})
  .to_csv(output_csv, index=False)
  )

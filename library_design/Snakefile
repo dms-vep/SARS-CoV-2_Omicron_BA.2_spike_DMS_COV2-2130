@@ -110,7 +110,7 @@ rule gisaid_primers:
         gisaid_mutations=rules.spike_alignment_counts.output.alignment_counts,
         reference_lookup=config['reference_lookup'],
         codon_table='reference_sequences/homo_codon_freq_del.csv',
-        spike_extended='reference_sequences/Omicron_BA.1_extended_ends_for_primers.txt',
+        spike_extended='reference_sequences/Omicron_BA.2_extended_ends_for_primers.txt',
         create_primers_srcipt='scripts/create_primers_del.py',
     params:
         gisaid_mutation_count_filter=config['gisaid_mutation_count_filter'],
@@ -129,7 +129,7 @@ rule positive_selection_primers:
     input:
         positive_sel_df=rules.spike_positive_selection_sites.output.csv,
         reference_lookup=config['reference_lookup'],
-        spike_extended='reference_sequences/Omicron_BA.1_extended_ends_for_primers.txt',
+        spike_extended='reference_sequences/Omicron_BA.2_extended_ends_for_primers.txt',
         create_primers_srcipt='scripts/2021Jan_create_primers.py',
     output:
         full_length_spike_primers_NNG='results/FULL_LENGTH_Spike_primer_positive_selection_NNG.csv',
@@ -149,7 +149,7 @@ rule usher_primers:
         reference_lookup=config['reference_lookup'],
         gisaid_mutations=rules.spike_alignment_counts.output.alignment_counts,
         codon_table='reference_sequences/homo_codon_freq_del.csv',
-        spike_extended='reference_sequences/Omicron_BA.1_extended_ends_for_primers.txt',
+        spike_extended='reference_sequences/Omicron_BA.2_extended_ends_for_primers.txt',
         create_primers_srcipt='scripts/create_primers_del.py',
     params:
         usher_count_filter=config['usher_count_filter'],
@@ -167,7 +167,7 @@ rule paired_positive_selection_primers:
     input:
         positive_sel_df=rules.spike_positive_selection_sites.output.csv,
         reference_lookup=config['reference_lookup'],
-        spike_extended='reference_sequences/Omicron_BA.1_extended_ends_for_paired_primers.fasta',
+        spike_extended='reference_sequences/Omicron_BA.2_extended_ends_for_paired_primers.fasta',
     output:
         positiveSelection_paired_primers_out='results/pool_positiveSelection_paired_primers.csv'
     conda: '../environment.yml'
