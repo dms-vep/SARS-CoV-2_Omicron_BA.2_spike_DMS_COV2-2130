@@ -22,6 +22,12 @@ details, using dropdowns, etc.
 .. toctree::
    :maxdepth: 1
 
+   analyze_pacbio_ccs
+   build_pacbio_consensus
+   build_codon_variants
+   analyze_func_scores
+   fit_globalepistasis
+   avg_muteffects
    analyze_variant_counts
    analyze_prob_escape
    fit_polyclonal
@@ -36,12 +42,24 @@ Data files
 - `codon-variant table <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/variants/codon_variants.csv>`_
 - `processed barcode sequencing runs <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/barcode_runs/processed_barcode_runs.csv>`_
 - `variant counts <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/variant_counts>`_
+- `functional selection experiments <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/func_scores/functional_selections.csv>`_
+- `mutation effects for each functional selection <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/globalepistasis_fits>`_
+- `mutation functional effects replicate average (observed phenotype) <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/muteffects_functional/muteffects_observed.csv>`_
+- `mutation functional effects replicate average (latent phenotype) <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/muteffects_functional/muteffects_latent.csv>`_
 - `antibody selection experiments <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/prob_escape/antibody_selections.csv>`_
 - `antibody escape values <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/antibody_escape>`_
 - `sequential to reference site numbering <https://github.com/dms-vep/SARS-CoV-2_Omicron_BA.2_spike_DMS_COV2-2130/blob/main/./results/site_numbering/site_numbering_map.csv>`_
+
+Interactive plots of mutation functional effects
+------------------------------------------------
+- `Observed phenotype effects <muteffects_observed_heatmap.html>`_
+- `Latent phenotype effects <muteffects_latent_heatmap.html>`_
 
 Interactive plots of mutation antibody escape
 ---------------------------------------------
 - `2130-1-0114-112 escape plot <2130-1-0114-112_escape_plot.html>`_
 - `COV2-2130 escape plot <COV2-2130_escape_plot.html>`_
 
+Additional plots
+----------------
+ - `COV2-2130_vs_2130-1-0114-112_escape <COV2-2130_vs_2130-1-0114-112_escape.html>`_
